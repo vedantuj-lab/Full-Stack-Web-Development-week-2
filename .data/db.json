@@ -1,0 +1,704 @@
+{
+  "profiles": [
+    {
+      "id": "usr-student-001",
+      "email": "student@learnsphere.io",
+      "password_hash": "Student123!",
+      "full_name": "Alex Rivera",
+      "role": "student",
+      "headline": "Aspiring Full-Stack Software Engineer",
+      "bio": "Enthusiastic developer learning modern React, TypeScript, and AI-driven web architectures.",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=faces",
+      "status": "active",
+      "streak_days": 5,
+      "last_activity_date": "2026-10-25",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-10-25T14:36:37.175Z"
+    },
+    {
+      "id": "usr-inst-001",
+      "email": "instructor@learnsphere.io",
+      "password_hash": "Instructor123!",
+      "full_name": "Dr. Elena Vance",
+      "role": "instructor",
+      "headline": "Principal Engineer & Computer Science Educator",
+      "bio": "Over 12 years in distributed systems and cloud web platforms. Passionate about hands-on software mastery.",
+      "avatar_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=faces",
+      "status": "active",
+      "streak_days": 14,
+      "last_activity_date": "2026-10-25",
+      "created_at": "2026-08-15T09:00:00Z",
+      "updated_at": "2026-10-24T12:00:00Z"
+    },
+    {
+      "id": "usr-inst-002",
+      "email": "sarah@learnsphere.io",
+      "password_hash": "Instructor123!",
+      "full_name": "Sarah Jenkins",
+      "role": "instructor",
+      "headline": "Staff Product Designer & UX Strategist",
+      "bio": "Design systems lead specializing in accessible interfaces and micro-interactions.",
+      "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=faces",
+      "status": "active",
+      "streak_days": 8,
+      "last_activity_date": "2026-10-25",
+      "created_at": "2026-08-20T09:00:00Z",
+      "updated_at": "2026-10-20T12:00:00Z"
+    },
+    {
+      "id": "usr-admin-001",
+      "email": "admin@learnsphere.io",
+      "password_hash": "Admin123!",
+      "full_name": "Marcus Chen",
+      "role": "admin",
+      "headline": "Head of Academic Operations & Platform Security",
+      "bio": "Oversees curricula quality, instructor approvals, and institutional trust.",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces",
+      "status": "active",
+      "streak_days": 21,
+      "last_activity_date": "2026-10-25",
+      "created_at": "2026-07-01T08:00:00Z",
+      "updated_at": "2026-10-25T08:00:00Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs-test-1792938997174",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Advanced Next.js 15 Server Components",
+      "slug": "advanced-nextjs-15-1792938997174",
+      "description": "Master React Server Components, streaming SSR, and edge deployments.",
+      "category": "Development",
+      "difficulty": "Advanced",
+      "thumbnail_url": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb",
+      "learning_objectives": [
+        "Master RSC patterns",
+        "Implement edge server actions"
+      ],
+      "prerequisites": [
+        "React 19 basics"
+      ],
+      "estimated_duration_hours": 4.5,
+      "status": "published",
+      "rating": 5,
+      "enrollments_count": 0,
+      "created_at": "2026-10-25T14:36:37.174Z",
+      "updated_at": "2026-10-25T14:36:37.174Z"
+    },
+    {
+      "id": "crs-react-001",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Full-Stack React 19 & TypeScript Architecture",
+      "slug": "fullstack-react-typescript-architecture",
+      "description": "Master component composition, server actions, custom state hooks, and high-performance frontend patterns using React 19 and strict TypeScript.",
+      "category": "Development",
+      "difficulty": "Intermediate",
+      "thumbnail_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=80",
+      "learning_objectives": [
+        "Build production-grade applications with React 19 functional patterns",
+        "Model strict types for server contracts, props, and compound state",
+        "Implement resilient data fetching and optimistic state updates",
+        "Deploy verified server-side full stack architecture"
+      ],
+      "prerequisites": [
+        "Basic JavaScript (ES6+)",
+        "HTML & CSS fundamentals"
+      ],
+      "estimated_duration_hours": 6.5,
+      "status": "published",
+      "rating": 4.9,
+      "enrollments_count": 142,
+      "created_at": "2026-09-05T10:00:00Z",
+      "updated_at": "2026-10-20T11:00:00Z"
+    },
+    {
+      "id": "crs-python-002",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Python for Data Analysis & Scientific Computing",
+      "slug": "python-data-analysis-scientific-computing",
+      "description": "Harness NumPy, Pandas, and Matplotlib to wrangle datasets, discover hidden statistical insights, and generate publication-quality visual models.",
+      "category": "Data Science",
+      "difficulty": "Beginner",
+      "thumbnail_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
+      "learning_objectives": [
+        "Vectorized calculations with high-throughput NumPy arrays",
+        "Data cleaning, transformation, and joins in Pandas",
+        "Exploratory data analysis and interactive charting"
+      ],
+      "prerequisites": [
+        "No prior programming experience required"
+      ],
+      "estimated_duration_hours": 8,
+      "status": "published",
+      "rating": 4.8,
+      "enrollments_count": 98,
+      "created_at": "2026-09-12T14:00:00Z",
+      "updated_at": "2026-10-18T09:00:00Z"
+    },
+    {
+      "id": "crs-uiux-003",
+      "instructor_id": "usr-inst-002",
+      "instructor_name": "Sarah Jenkins",
+      "title": "Design Systems & Enterprise UI/UX Foundations",
+      "slug": "design-systems-enterprise-ui-ux",
+      "description": "Craft scalable design tokens, WCAG AA compliant color systems, fluid typography, and consistent reusable design patterns across cross-platform products.",
+      "category": "Design",
+      "difficulty": "Intermediate",
+      "thumbnail_url": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&auto=format&fit=crop&q=80",
+      "learning_objectives": [
+        "Establish semantic design token hierarchies (color, spacing, elevation)",
+        "Ensure 100% WCAG contrast and keyboard accessibility compliance",
+        "Bridge developer handoff with crisp component specs"
+      ],
+      "prerequisites": [
+        "Figma or Sketch familiarity"
+      ],
+      "estimated_duration_hours": 5,
+      "status": "published",
+      "rating": 4.95,
+      "enrollments_count": 67,
+      "created_at": "2026-09-20T08:30:00Z",
+      "updated_at": "2026-10-15T16:00:00Z"
+    },
+    {
+      "id": "crs-ai-004",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Building Intelligent AI Agents with LLMs",
+      "slug": "building-intelligent-ai-agents-llms",
+      "description": "Engineer robust autonomous agents using tool calling, vector search grounding, semantic routing, and structured JSON output pipelines.",
+      "category": "AI & Machine Learning",
+      "difficulty": "Advanced",
+      "thumbnail_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=80",
+      "learning_objectives": [
+        "Configure tool declarations and structured function calling",
+        "Implement resilient multi-turn agent conversation loops",
+        "Evaluate hallucination rates and guardrail parameters"
+      ],
+      "prerequisites": [
+        "Intermediate TypeScript or Python"
+      ],
+      "estimated_duration_hours": 9.5,
+      "status": "published",
+      "rating": 4.9,
+      "enrollments_count": 115,
+      "created_at": "2026-10-01T10:00:00Z",
+      "updated_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "crs-draft-005",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Cloud-Native Microservices with Docker & Kubernetes",
+      "slug": "cloud-native-microservices-docker-k8s",
+      "description": "Work-in-progress curriculum covering container orchestration, service meshes, zero-downtime rolling deploys, and cluster telemetry.",
+      "category": "Development",
+      "difficulty": "Advanced",
+      "thumbnail_url": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&auto=format&fit=crop&q=80",
+      "learning_objectives": [
+        "Containerize multi-stage Node/Go services",
+        "Deploy Pods, Deployments, and Ingress controllers"
+      ],
+      "prerequisites": [
+        "Linux command line comfort"
+      ],
+      "estimated_duration_hours": 11,
+      "status": "draft",
+      "rating": 0,
+      "enrollments_count": 0,
+      "created_at": "2026-10-22T15:00:00Z",
+      "updated_at": "2026-10-24T18:00:00Z"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lsn-react-101",
+      "course_id": "crs-react-001",
+      "title": "1. Foundations: React 19 Core Mental Model & JSX Compilation",
+      "description": "Learn the architectural shifts in React 19, compiler optimizations, and modern execution paradigms.",
+      "content": "### Welcome to React 19 Architecture\n\nReact 19 introduces automatic memoization through the React Compiler, eliminating excessive `useMemo` and `useCallback` boilerplate.\n\n#### Core Objectives\n- Understand compiler AST transformation\n- Analyze why pure component rendering is the cornerstone of reliability\n- Explore the elimination of manual memoization handles\n\n```tsx\n// Pure functional components without manual useMemo wrappers\nexport function MetricBadge({ label, count }: { label: string; count: number }) {\n  return (\n    <div className=\"flex items-center gap-2 px-3 py-1 bg-violet-50 text-violet-700 rounded-full text-xs font-semibold\">\n      <span>{label}</span>\n      <span className=\"bg-violet-200 px-1.5 py-0.5 rounded-full\">{count}</span>\n    </div>\n  );\n}\n```\n",
+      "video_url": "https://www.youtube.com/embed/SqcY0GlETPk",
+      "duration_minutes": 15,
+      "order_index": 0,
+      "attachments": [
+        {
+          "name": "React19_Architecture_Cheatsheet.pdf",
+          "url": "#",
+          "size": "1.4 MB"
+        },
+        {
+          "name": "Starter_Boilerplate.zip",
+          "url": "#",
+          "size": "2.1 MB"
+        }
+      ],
+      "created_at": "2026-09-05T11:00:00Z"
+    },
+    {
+      "id": "lsn-react-102",
+      "course_id": "crs-react-001",
+      "title": "2. Strict Typing with Generics, Discriminated Unions & Zod",
+      "description": "Master advanced TypeScript patterns to eliminate runtime regressions and type leakages.",
+      "content": "### Discriminated Unions in Application State\n\nWhen modeling network states, avoid loose booleans like `isLoading` and `isError`. Instead, model explicit states with tagged unions:\n\n```typescript\ntype RemoteData<T> =\n  | { status: 'idle' }\n  | { status: 'loading' }\n  | { status: 'success'; data: T; timestamp: number }\n  | { status: 'error'; message: string; code: number };\n```\n\nThis guarantees complete type safety when rendering UI branches.\n",
+      "video_url": "https://www.youtube.com/embed/b0IZo2Aho9Y",
+      "duration_minutes": 20,
+      "order_index": 1,
+      "attachments": [
+        {
+          "name": "TypeScript_Handbook_Extract.pdf",
+          "url": "#",
+          "size": "890 KB"
+        }
+      ],
+      "created_at": "2026-09-05T12:00:00Z"
+    },
+    {
+      "id": "lsn-react-103",
+      "course_id": "crs-react-001",
+      "title": "3. Custom Compound Hooks & State Machines",
+      "description": "Build robust interactive state controllers for complex UI widgets.",
+      "content": "### Compound Component Pattern\n\nBy combining Context with sub-components, you provide flexible, ergonomic APIs for consumers:\n\n```tsx\n<Tabs defaultValue=\"overview\">\n  <Tabs.List>\n    <Tabs.Trigger value=\"overview\">Overview</Tabs.Trigger>\n    <Tabs.Trigger value=\"reviews\">Reviews</Tabs.Trigger>\n  </Tabs.List>\n  <Tabs.Content value=\"overview\">Course details...</Tabs.Content>\n</Tabs>\n```\n",
+      "video_url": "https://www.youtube.com/embed/dpw9NFzb3J8",
+      "duration_minutes": 25,
+      "order_index": 2,
+      "created_at": "2026-09-06T10:00:00Z"
+    },
+    {
+      "id": "lsn-react-104",
+      "course_id": "crs-react-001",
+      "title": "4. Production Deployment & Telemetry Checklist",
+      "description": "Prepare your full-stack bundle for production edge networks.",
+      "content": "### Production Readiness Checklist\n\n1. Audit bundle size with `rollup-plugin-visualizer`.\n2. Configure HTTP Security Headers: Content-Security-Policy, HSTS, and X-Content-Type-Options.\n3. Validate client and server environment secrets separation.\n4. Establish synthetic uptime monitoring.\n",
+      "video_url": "https://www.youtube.com/embed/8aGhZQkoFbQ",
+      "duration_minutes": 18,
+      "order_index": 3,
+      "created_at": "2026-09-07T14:00:00Z"
+    },
+    {
+      "id": "lsn-py-201",
+      "course_id": "crs-python-002",
+      "title": "1. Python Data Ecosystem: Anaconda, Jupyter & Virtual Envs",
+      "description": "Setup an isolated scientific Python workspace with modern package management.",
+      "content": "Learn to configure conda and uv for lightning-fast scientific package installations.",
+      "video_url": "https://www.youtube.com/embed/rfscVS0vtbw",
+      "duration_minutes": 20,
+      "order_index": 0,
+      "created_at": "2026-09-12T15:00:00Z"
+    },
+    {
+      "id": "lsn-py-202",
+      "course_id": "crs-python-002",
+      "title": "2. High Performance NumPy Matrices & Broadcasting",
+      "description": "Eliminate slow Python for-loops using contiguous C-arrays and vectorized operations.",
+      "content": "Master array slicing, matrix dot products, and axis reductions.",
+      "video_url": "https://www.youtube.com/embed/QUT1VHiLmmI",
+      "duration_minutes": 25,
+      "order_index": 1,
+      "created_at": "2026-09-12T16:00:00Z"
+    },
+    {
+      "id": "lsn-py-203",
+      "course_id": "crs-python-002",
+      "title": "3. Pandas DataFrames: GroupBy, Merging & Time Series",
+      "description": "Process gigabytes of tabular logs, fill missing values, and extract temporal patterns.",
+      "content": "Techniques for memory-efficient data grouping and custom aggregations.",
+      "video_url": "https://www.youtube.com/embed/vmEHCJofslg",
+      "duration_minutes": 30,
+      "order_index": 2,
+      "created_at": "2026-09-13T10:00:00Z"
+    },
+    {
+      "id": "lsn-ds-301",
+      "course_id": "crs-uiux-003",
+      "title": "1. Semantic Design Tokens: Philosophy & Architecture",
+      "description": "Why hex codes in components break at scale: building primitive and semantic token scales.",
+      "content": "Learn how multi-brand and dark/light themes rely on abstracted token pointers.",
+      "video_url": "https://www.youtube.com/embed/c9Wg6Cb_YlU",
+      "duration_minutes": 18,
+      "order_index": 0,
+      "created_at": "2026-09-20T09:00:00Z"
+    },
+    {
+      "id": "lsn-ds-302",
+      "course_id": "crs-uiux-003",
+      "title": "2. Accessible Component Patterns: Focus Rings & ARIA",
+      "description": "Building modals, comboboxes, and dropdowns that pass accessibility audits with zero exceptions.",
+      "content": "Master keyboard trapping, aria-expanded, and screen reader announcements.",
+      "video_url": "https://www.youtube.com/embed/20SHvU2PKsM",
+      "duration_minutes": 22,
+      "order_index": 1,
+      "created_at": "2026-09-20T10:00:00Z"
+    },
+    {
+      "id": "lsn-ai-401",
+      "course_id": "crs-ai-004",
+      "title": "1. Autonomous Agent Architectures & ReAct Loops",
+      "description": "Reasoning and Acting (ReAct) flow design: Thought, Action, Observation.",
+      "content": "Designing state machines that govern how LLMs decide whether to call tools or respond directly.",
+      "video_url": "https://www.youtube.com/embed/sal78ACtGTc",
+      "duration_minutes": 24,
+      "order_index": 0,
+      "created_at": "2026-10-01T11:00:00Z"
+    },
+    {
+      "id": "lsn-ai-402",
+      "course_id": "crs-ai-004",
+      "title": "2. Structured Tool Declarations & JSON Schema Extraction",
+      "description": "Strict schema specification for external APIs and database queries.",
+      "content": "Preventing parameter hallucination with declarative Zod and JSON Schema definitions.",
+      "video_url": "https://www.youtube.com/embed/9bZkp7q19f0",
+      "duration_minutes": 28,
+      "order_index": 1,
+      "created_at": "2026-10-01T12:00:00Z"
+    },
+    {
+      "id": "lsn-test-1792938997174",
+      "course_id": "crs-test-1792938997174",
+      "title": "1. React Server Components Wire Format",
+      "description": "Dissecting the RSC streaming protocol",
+      "content": "Deep dive into JSON-stream payload format.",
+      "video_url": "https://www.youtube.com/embed/SqcY0GlETPk",
+      "duration_minutes": 15,
+      "order_index": 0,
+      "created_at": "2026-10-25T14:36:37.174Z"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "enr-alex-react",
+      "student_id": "usr-student-001",
+      "course_id": "crs-react-001",
+      "enrolled_at": "2026-10-10T09:00:00Z",
+      "last_accessed_at": "2026-10-25T14:36:37.173Z",
+      "completed_at": "2026-10-25T14:36:37.173Z"
+    },
+    {
+      "id": "enr-alex-python",
+      "student_id": "usr-student-001",
+      "course_id": "crs-python-002",
+      "enrolled_at": "2026-10-18T11:15:00Z",
+      "last_accessed_at": "2026-10-23T16:00:00Z"
+    }
+  ],
+  "lesson_progress": [
+    {
+      "id": "prg-001",
+      "enrollment_id": "enr-alex-react",
+      "student_id": "usr-student-001",
+      "lesson_id": "lsn-react-101",
+      "is_completed": true,
+      "completed_at": "2026-10-12T10:30:00Z"
+    },
+    {
+      "id": "prg-002",
+      "enrollment_id": "enr-alex-react",
+      "student_id": "usr-student-001",
+      "lesson_id": "lsn-react-102",
+      "is_completed": true,
+      "completed_at": "2026-10-14T11:45:00Z"
+    },
+    {
+      "id": "prg-1792938997173-d7equ",
+      "enrollment_id": "enr-alex-react",
+      "student_id": "usr-student-001",
+      "lesson_id": "lsn-react-103",
+      "is_completed": true,
+      "completed_at": "2026-10-25T14:36:37.173Z"
+    },
+    {
+      "id": "prg-1792938997173-ja6yr",
+      "enrollment_id": "enr-alex-react",
+      "student_id": "usr-student-001",
+      "lesson_id": "lsn-react-104",
+      "is_completed": true,
+      "completed_at": "2026-10-25T14:36:37.173Z"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "qz-react-final",
+      "course_id": "crs-react-001",
+      "title": "React 19 Architecture & Patterns Comprehensive Exam",
+      "description": "Assess your comprehension of compiler memoization, strict union typing, and compound component patterns.",
+      "passing_percentage": 75,
+      "time_limit_minutes": 15,
+      "created_at": "2026-09-08T09:00:00Z"
+    },
+    {
+      "id": "qz-py-01",
+      "course_id": "crs-python-002",
+      "title": "Python Scientific Computing Midterm",
+      "description": "Vectorization, broadcasting rules, and DataFrame aggregation techniques.",
+      "passing_percentage": 70,
+      "time_limit_minutes": 20,
+      "created_at": "2026-09-14T09:00:00Z"
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "qq-react-1",
+      "quiz_id": "qz-react-final",
+      "question_text": "What major optimization does the React 19 Compiler provide out of the box?",
+      "explanation": "The React Compiler analyzes code and performs automatic fine-grained memoization without requiring manual useMemo or useCallback hooks.",
+      "points": 25,
+      "order_index": 0,
+      "options": [
+        {
+          "id": "opt-r1-a",
+          "text": "It converts JSX directly into WebAssembly binary bytecode",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r1-b",
+          "text": "It automatically memoizes values and functions, reducing manual useMemo/useCallback boilerplate",
+          "is_correct": true
+        },
+        {
+          "id": "opt-r1-c",
+          "text": "It forces all components to render on the server exclusively",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r1-d",
+          "text": "It replaces CSS styles with inline JavaScript objects",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "qq-react-2",
+      "quiz_id": "qz-react-final",
+      "question_text": "Why is modeling remote API states as Discriminated Unions superior to multiple boolean flags (isLoading, isError)?",
+      "explanation": "Discriminated unions ensure impossible states (such as loading AND error both being true simultaneously) cannot exist at compile time.",
+      "points": 25,
+      "order_index": 1,
+      "options": [
+        {
+          "id": "opt-r2-a",
+          "text": "It decreases bundle size by over 50%",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r2-b",
+          "text": "It eliminates impossible states (e.g. isLoading: true and isError: true simultaneously)",
+          "is_correct": true
+        },
+        {
+          "id": "opt-r2-c",
+          "text": "It allows bypassing TypeScript compiler checks",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r2-d",
+          "text": "It makes all API calls execute synchronously",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "qq-react-3",
+      "quiz_id": "qz-react-final",
+      "question_text": "Which pattern allows a parent component to implicitly share state with deeply nested child components while providing an intuitive JSX API?",
+      "explanation": "The Compound Component pattern (often built with React Context) enables coordinated sub-components like Select and Option.",
+      "points": 25,
+      "order_index": 2,
+      "options": [
+        {
+          "id": "opt-r3-a",
+          "text": "The Compound Component Pattern",
+          "is_correct": true
+        },
+        {
+          "id": "opt-r3-b",
+          "text": "The Singleton Prototype Pattern",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r3-c",
+          "text": "The Global Window Storage Pattern",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r3-d",
+          "text": "The Proxy Interceptor Loop",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "qq-react-4",
+      "quiz_id": "qz-react-final",
+      "question_text": "Where should progress percentages and quiz scores be calculated in a secure enterprise LMS?",
+      "explanation": "All calculations of course progress and quiz grades must be performed server-side to prevent tampering or client spoofing.",
+      "points": 25,
+      "order_index": 3,
+      "options": [
+        {
+          "id": "opt-r4-a",
+          "text": "In localStorage in the browser",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r4-b",
+          "text": "Exclusively on the server backend to guarantee tamper-proof records",
+          "is_correct": true
+        },
+        {
+          "id": "opt-r4-c",
+          "text": "Inside client CSS variables",
+          "is_correct": false
+        },
+        {
+          "id": "opt-r4-d",
+          "text": "In URL query parameters",
+          "is_correct": false
+        }
+      ]
+    }
+  ],
+  "quiz_attempts": [
+    {
+      "id": "test-att-1792938997174",
+      "quiz_id": "qz-react-final",
+      "quiz_title": "React 19 Architecture & Patterns Comprehensive Exam",
+      "student_id": "usr-student-001",
+      "student_name": "Alex Rivera",
+      "course_id": "crs-react-001",
+      "score": 100,
+      "total_points": 100,
+      "percentage": 100,
+      "passed": true,
+      "submitted_at": "2026-10-25T14:36:37.174Z",
+      "answers": {
+        "qq-react-1": "opt-r1-b",
+        "qq-react-2": "opt-r2-b",
+        "qq-react-3": "opt-r3-a",
+        "qq-react-4": "opt-r4-b"
+      }
+    }
+  ],
+  "certificates": [
+    {
+      "id": "crt-demo-001",
+      "certificate_code": "LS-2026-REACT-8849",
+      "student_id": "usr-student-001",
+      "course_id": "crs-react-001",
+      "student_name": "Alex Rivera",
+      "course_title": "Full-Stack React 19 & TypeScript Architecture",
+      "instructor_name": "Dr. Elena Vance",
+      "issued_at": "2026-10-20T17:00:00Z",
+      "score_achieved": 100
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-001",
+      "course_id": "crs-react-001",
+      "course_title": "Full-Stack React 19 & TypeScript Architecture",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Course Materials & Interactive Sandbox Updated",
+      "content": "We have refreshed Lesson 2 with additional code sandboxes for strict generic types. Check out the updated attachments tab!",
+      "created_at": "2026-10-21T10:00:00Z"
+    },
+    {
+      "id": "ann-002",
+      "course_id": "crs-python-002",
+      "course_title": "Python for Data Analysis & Scientific Computing",
+      "instructor_id": "usr-inst-001",
+      "instructor_name": "Dr. Elena Vance",
+      "title": "Office Hours & Live Q&A Scheduled",
+      "content": "Join our weekly office hours this Thursday at 4:00 PM UTC to discuss vectorized NumPy algorithms and DataFrame performance.",
+      "created_at": "2026-10-23T15:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-001",
+      "user_id": "usr-student-001",
+      "title": "New Announcement in React 19 Architecture",
+      "message": "Dr. Elena Vance posted an update regarding interactive code sandboxes.",
+      "type": "course",
+      "is_read": false,
+      "link": "/student/my-learning",
+      "created_at": "2026-10-21T10:05:00Z"
+    },
+    {
+      "id": "notif-002",
+      "user_id": "usr-student-001",
+      "title": "5-Day Learning Streak Active! 🔥",
+      "message": "Great momentum! You have completed lessons 5 days in a row.",
+      "type": "system",
+      "is_read": true,
+      "link": "/student",
+      "created_at": "2026-10-24T09:00:00Z"
+    },
+    {
+      "id": "notif-003",
+      "user_id": "usr-inst-001",
+      "title": "New Course Enrollment",
+      "message": "Alex Rivera enrolled in Python for Data Analysis & Scientific Computing.",
+      "type": "course",
+      "is_read": false,
+      "link": "/instructor/students",
+      "created_at": "2026-10-18T11:15:00Z"
+    }
+  ],
+  "admin_activity_logs": [
+    {
+      "id": "log-test-1792938997175",
+      "admin_id": "usr-admin-001",
+      "admin_name": "Marcus Chen",
+      "action": "SUSPEND_USER",
+      "target_type": "USER",
+      "target_id": "usr-student-001",
+      "details": {
+        "email": "student@learnsphere.io",
+        "status": "suspended"
+      },
+      "created_at": "2026-10-25T14:36:37.175Z"
+    },
+    {
+      "id": "log-002",
+      "admin_id": "usr-admin-001",
+      "admin_name": "Marcus Chen",
+      "action": "APPROVE_COURSE",
+      "target_type": "COURSE",
+      "target_id": "crs-ai-004",
+      "details": {
+        "title": "Building Intelligent AI Agents with LLMs",
+        "status": "published"
+      },
+      "created_at": "2026-10-01T09:45:00Z"
+    },
+    {
+      "id": "log-001",
+      "admin_id": "usr-admin-001",
+      "admin_name": "Marcus Chen",
+      "action": "APPROVE_COURSE",
+      "target_type": "COURSE",
+      "target_id": "crs-react-001",
+      "details": {
+        "title": "Full-Stack React 19 & TypeScript Architecture",
+        "status": "published"
+      },
+      "created_at": "2026-09-05T09:30:00Z"
+    },
+    {
+      "id": "log-003",
+      "admin_id": "usr-admin-001",
+      "admin_name": "Marcus Chen",
+      "action": "VERIFY_INSTRUCTOR",
+      "target_type": "USER",
+      "target_id": "usr-inst-002",
+      "details": {
+        "email": "sarah@learnsphere.io",
+        "verified": true
+      },
+      "created_at": "2026-08-20T10:00:00Z"
+    }
+  ]
+}

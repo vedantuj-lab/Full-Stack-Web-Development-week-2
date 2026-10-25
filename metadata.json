@@ -1,0 +1,6 @@
+{
+  "name": "LearnSphere",
+  "description": "Full-Stack Online Learning Management Platform — Learn Smarter. Track Progress. Achieve More.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

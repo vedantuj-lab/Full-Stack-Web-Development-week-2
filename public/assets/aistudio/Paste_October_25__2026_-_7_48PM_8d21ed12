@@ -1,0 +1,1131 @@
+PROJECT: LEARNSPHERE
+Complete Full-Stack Online Learning Management Platform
+
+Act as a senior full-stack software engineer, software architect, database engineer, UI/UX designer, security engineer, and quality assurance engineer.
+
+Your task is to build a complete, professional, responsive, and functional online learning management platform called LearnSphere.
+
+Tagline: "Learn Smarter. Track Progress. Achieve More."
+
+This project must be a real working web application, not a static website, non-functional prototype, or collection of dashboard screenshots.
+
+The application must have a professional public landing page and three distinct authenticated user experiences:
+
+Student.
+Instructor.
+Administrator.
+
+Each role must have its own dashboard, navigation, authorized operations, and appropriate database access.
+
+Use Google AI Studio as the development environment and maintain the project in a GitHub repository.
+
+Do not claim that GitHub synchronization, deployment, or database configuration has succeeded unless the relevant operation has actually been completed and verified.
+
+==================================================
+
+FIRST: INSPECT THE EXISTING PROJECT
+==================================================
+
+Before modifying code:
+
+Inspect the complete existing repository and folder structure.
+Identify the frontend framework and existing dependencies.
+Identify whether a backend already exists.
+Identify existing database integrations and authentication configuration.
+Inspect the current landing page, dashboards, routes, components, and API utilities.
+Identify existing working features.
+Identify incomplete features and broken workflows.
+Identify console errors, failed API calls, invalid responses, and missing environment variables.
+Inspect existing Git configuration and the configured remote repository, when available.
+Read the existing README and project configuration files.
+
+Do not immediately delete or rewrite the existing project.
+
+Preserve working functionality unless a change is necessary and justified.
+
+If the repository is empty, initialize a clean project using the architecture below.
+
+If the project already uses a suitable stack, prefer improving it over replacing it without a good reason.
+
+Before implementation, create or update these documents:
+
+docs/PRD.md
+docs/ARCHITECTURE.md
+docs/DATABASE_SCHEMA.md
+docs/API_CONTRACT.md
+docs/IMPLEMENTATION_PLAN.md
+docs/TEST_PLAN.md
+
+Explain major existing problems and the implementation order.
+
+Then proceed with implementation rather than stopping after producing documentation.
+
+Build a unified learning platform where students discover courses, enroll, complete lessons, take assessments, track progress, and obtain completion certificates.
+
+Instructors must be able to create and manage courses, organize lessons, publish educational content, create quizzes, and monitor student performance.
+
+Administrators must be able to manage accounts, review courses, monitor platform activity, and oversee the learning environment.
+
+The platform must support the complete workflow:
+
+DISCOVER
+→ REGISTER
+→ ENROLL
+→ LEARN
+→ COMPLETE LESSONS
+→ TAKE ASSESSMENTS
+→ TRACK PROGRESS
+→ COMPLETE COURSE
+→ EARN CERTIFICATE
+
+Instructor workflow:
+
+CREATE COURSE
+→ ADD LESSONS
+→ CREATE QUIZZES
+→ PREVIEW
+→ PUBLISH
+→ MONITOR ENROLLMENTS
+→ REVIEW PERFORMANCE
+
+Administrator workflow:
+
+MANAGE USERS
+→ REVIEW INSTRUCTORS
+→ MODERATE COURSES
+→ MONITOR ACTIVITY
+→ VIEW REPORTS
+
+Use the following stack unless the existing project already has a suitable implementation:
+
+Frontend:
+
+React.
+Vite.
+JavaScript or TypeScript, preferably matching the existing project.
+Tailwind CSS.
+React Router.
+Lucide React.
+Recharts for data visualization.
+
+Backend:
+
+Node.js.
+Express.
+REST API.
+Server-side input validation.
+
+Database:
+
+Supabase PostgreSQL.
+
+Authentication:
+
+Supabase Auth.
+
+File storage:
+
+Supabase Storage for permitted course thumbnails and learning materials.
+
+Testing:
+
+Appropriate frontend tests.
+Backend API tests.
+Database authorization tests.
+Browser-based end-to-end tests when available.
+
+Deployment:
+
+A compatible frontend hosting platform.
+A compatible Node.js backend hosting platform.
+Supabase for database, authentication, and configured storage.
+
+Use a consistent dependency strategy and avoid unnecessary libraries.
+
+Do not introduce artificial complexity or technologies that do not serve the application.
+
+Do not put private database credentials, service-role keys, or secret API keys in frontend code.
+
+All privileged operations must execute on a trusted backend or through appropriately protected database functions and policies.
+
+Create a polished, premium landing page.
+
+Navigation:
+
+Home.
+Explore Courses.
+How It Works.
+About.
+Sign In.
+Get Started.
+
+Hero headline:
+"Your Next Skill Starts Here."
+
+Supporting text:
+"Discover courses, learn at your own pace, track your progress, and turn your knowledge into real achievements."
+
+Primary CTA:
+"Explore Courses"
+
+Secondary CTA:
+"Start Learning"
+
+Both buttons must perform meaningful actions.
+
+Include:
+
+Featured courses loaded from published course records.
+Course categories.
+How-it-works section.
+Learning benefits.
+Student entry card.
+Instructor entry card.
+Administrator access entry.
+Footer containing relevant informational links.
+
+The three role cards must open the appropriate registration, login, or informational flow.
+
+Do not grant privileges merely because someone clicks a role card.
+
+Provide responsive layouts for desktop, tablet, and mobile.
+
+Use professional typography, meaningful whitespace, polished course imagery, subtle animation, and clear visual hierarchy.
+
+Never use broken image URLs.
+
+Provide a graceful fallback when a course has no image.
+
+Implement secure authentication.
+
+Requirements:
+
+Student registration.
+Instructor registration or instructor application.
+Administrator login.
+Login.
+Logout.
+Password recovery.
+Session persistence.
+Appropriate session expiration and refresh behavior.
+User profile management.
+Protected routes.
+Role-specific authorization.
+Suspended-account handling.
+
+Use Supabase Auth when configured.
+
+Never store plaintext passwords.
+
+Never use a hardcoded password to grant administrator access.
+
+Never allow users to assign themselves privileged roles by modifying a registration request or browser storage.
+
+The backend must validate the authenticated identity and the user's current role.
+
+Role assignments must be stored in trusted database records and protected by database policies.
+
+Instructor privileges must be assigned through an approved or administrator-controlled process.
+
+Administrator privileges must only be granted through a trusted administrative setup process.
+
+Implement a secure first-administrator setup procedure that does not expose privileged credentials in the frontend or repository.
+
+If Supabase credentials are missing, clearly explain the required configuration. Provide a development-only mode if useful, but never present simulated authentication as production authentication.
+
+Create a dedicated student dashboard with its own navigation.
+
+Navigation:
+
+Overview.
+Explore Courses.
+My Learning.
+Assessments.
+Certificates.
+Notifications.
+Profile.
+Settings.
+
+Overview:
+
+Enrolled courses.
+Courses in progress.
+Completed courses.
+Recent learning activity.
+Available assessments.
+Current learning streak, if implemented.
+Continue Learning section.
+
+Explore Courses:
+
+Load published courses.
+Search by title or instructor.
+Filter by category.
+Filter by difficulty.
+Sort results.
+Open course details.
+View course lessons and objectives.
+Enroll in an available course.
+
+Enrollment:
+
+Verify the user is authenticated.
+Verify the user has the student role.
+Verify the course exists and is published.
+Prevent duplicate active enrollment.
+Persist enrollment in the database.
+Update the interface only after a successful operation.
+Display understandable errors when the operation fails.
+
+My Learning:
+
+Display the student's enrolled courses.
+Show course progress.
+Show completed lessons and total lessons.
+Provide a Continue Learning action.
+Load the correct records for the authenticated student.
+
+Lesson Player:
+
+Display lesson title and content.
+Support configured video URLs.
+Support permitted downloadable materials.
+Provide previous and next lesson navigation.
+Allow the student to mark a lesson complete.
+Persist completion.
+Restore completion status after login.
+Update progress after successful completion.
+
+Progress:
+Calculate progress from actual completed lesson records.
+
+Progress percentage =
+completed lessons / total lessons × 100.
+
+Handle courses with zero lessons safely.
+
+Do not allow the browser to directly assign arbitrary progress percentages.
+
+Assessments:
+
+Display available quizzes.
+Show instructions.
+Render questions and answer choices.
+Validate required responses.
+Submit answers to the backend.
+Calculate scores on the backend.
+Store attempts and results.
+Show permitted feedback.
+Display previous attempts.
+
+Certificates:
+
+Check completion requirements.
+Prevent duplicate certificate issuance where the design requires uniqueness.
+Generate a unique certificate identifier.
+Display the student's name and course title.
+Record the completion date.
+Support certificate download if implemented.
+Provide a certificate verification page.
+
+Notifications:
+
+Display notifications relevant to the authenticated user.
+Support marking notifications as read.
+Persist notification state.
+Prevent users from accessing another user's private notifications.
+
+Profile:
+
+Allow permitted profile updates.
+Validate inputs.
+Provide a secure password-change flow.
+Never expose password hashes, access tokens, or secret authentication data.
+
+Create a separate instructor dashboard and navigation.
+
+Navigation:
+
+Overview.
+My Courses.
+Create Course.
+Lessons.
+Quiz Builder.
+Students.
+Announcements.
+Analytics.
+Profile.
+
+Overview:
+
+Total courses.
+Published courses.
+Draft courses.
+Total enrollments.
+Recent course activity.
+Authorized student performance summaries.
+
+Course creation:
+Provide fields for:
+
+Title.
+Description.
+Category.
+Difficulty.
+Thumbnail.
+Learning objectives.
+Prerequisites.
+Estimated duration.
+
+New courses must initially be drafts.
+
+Course management:
+
+List courses owned by the instructor.
+Create a course.
+Edit a course.
+Save drafts.
+Preview a course.
+Publish a course.
+Unpublish or archive a course where permitted.
+View enrollment counts.
+
+Ownership:
+The backend must verify course ownership for every instructor write operation.
+
+An instructor must not edit or delete another instructor's course without explicitly authorized administrative permission.
+
+Lesson management:
+
+Add lessons.
+Edit lesson titles and content.
+Reorder lessons.
+Add permitted learning materials.
+Add video URLs.
+Remove lessons when permitted.
+Save all changes to the database.
+
+Quiz Builder:
+
+Create a quiz.
+Add multiple-choice questions.
+Add answer options.
+Define correct answers.
+Define marks.
+Configure passing scores.
+Preview a quiz.
+Publish or update a quiz.
+
+Do not return correct answers to students before submission.
+
+Student performance:
+Display only students enrolled in courses owned by the instructor.
+
+Show:
+
+Student name.
+Course progress.
+Completed lessons.
+Quiz attempts.
+Assessment scores.
+Completion status.
+
+Announcements:
+
+Create announcements for owned courses.
+Edit permitted announcements.
+Publish announcements.
+Display announcements to the appropriate enrolled students.
+
+Create a separate administrator interface.
+
+Navigation:
+
+Overview.
+Users.
+Instructors.
+Courses.
+Course Reviews.
+Reports.
+Activity Logs.
+Settings.
+
+Overview:
+
+Total users.
+Student count.
+Instructor count.
+Published course count.
+Enrollment count.
+Recent administrative activity.
+
+All statistics must be calculated from authorized database queries.
+
+User management:
+
+Search users.
+Filter by role.
+View account details.
+Suspend accounts.
+Reactivate accounts.
+Review instructor applications.
+Assign roles only through authorized operations.
+
+Course management:
+
+View courses.
+View course ownership.
+Review pending courses if moderation is enabled.
+Approve or reject course submissions.
+Unpublish content where authorized.
+Archive courses when appropriate.
+Record moderation decisions.
+
+Activity logs:
+Record important administrative actions, including:
+
+User suspension.
+User reactivation.
+Role changes.
+Course approval.
+Course rejection.
+Content removal.
+
+Do not record passwords, authentication tokens, or unnecessary sensitive information.
+
+Reports:
+
+Enrollment trends.
+Popular courses.
+Completion rates.
+User growth.
+Instructor activity.
+
+Charts must use actual database results.
+
+If seeded demonstration data is used, identify it as demonstration data.
+
+Implement these after the main learning workflow works.
+
+Personalized learning:
+
+Continue the last course.
+Highlight incomplete lessons.
+Show available assessments.
+Display recent courses.
+Recommend relevant published courses.
+
+Use understandable rule-based logic.
+
+Learning streaks:
+
+Record qualifying learning activity.
+Calculate consecutive active days.
+Display the current streak.
+Display the longest streak.
+Avoid awarding multiple daily activities incorrectly.
+
+Achievements:
+
+Lessons completed.
+Courses completed.
+Assessment milestones.
+Learning streak milestones.
+
+Only award achievements when their requirements are satisfied.
+
+Certificate generation:
+
+Verify enrollment and course completion.
+Verify any required assessment conditions.
+Create a unique certificate record.
+Display and download the certificate when supported.
+Provide verification using the certificate identifier.
+
+Create and document an appropriate relational database schema.
+
+Include these core tables:
+
+profiles
+courses
+lessons
+enrollments
+lesson_progress
+quizzes
+quiz_questions
+quiz_options
+quiz_attempts
+quiz_answers
+certificates
+announcements
+notifications
+course_reviews
+admin_activity_logs
+
+Additional tables may be created for instructor approvals, course moderation, achievements, and learning streaks.
+
+Use:
+
+UUID primary keys where appropriate.
+Foreign keys.
+NOT NULL constraints where required.
+Unique constraints.
+Appropriate indexes.
+Creation and update timestamps.
+Valid status values.
+Database transactions where multiple related writes must succeed together.
+
+Define relationships correctly.
+
+Examples:
+
+A course belongs to an instructor.
+A course contains lessons.
+A student enrolls in courses.
+A student has lesson progress records.
+A quiz belongs to a course.
+A quiz attempt belongs to a student.
+A certificate belongs to an eligible student-course completion.
+
+Prevent duplicate enrollment records and duplicate lesson-completion records where appropriate.
+
+Create version-controlled database migrations.
+
+Provide seed data containing a small, realistic catalogue of courses and lessons for development.
+
+Do not include real user credentials or production secrets in seed files.
+
+Implement security throughout the application.
+
+Requirements:
+
+Server-side authentication verification.
+Server-side role authorization.
+Course ownership checks.
+Student enrollment checks.
+Input validation.
+Parameterized database operations.
+Appropriate database row-level security.
+Secure session handling.
+Rate limiting for sensitive endpoints where appropriate.
+File type and size validation.
+Safe file storage.
+Secure error responses.
+Protection against unauthorized record access.
+Appropriate security headers.
+Environment variable management.
+
+Never trust:
+
+A role supplied by the frontend.
+A user ID supplied without verification.
+A score calculated only in the browser.
+A progress percentage supplied by the browser.
+A course ownership claim supplied by the frontend.
+
+Do not expose Supabase service-role keys to the browser.
+
+Do not place private credentials in GitHub.
+
+Create an .env.example file containing placeholder values.
+
+Ensure .env and other secret files are excluded through .gitignore.
+
+Implement documented REST API routes for:
+
+Authentication/profile:
+
+GET /api/me
+GET /api/profile
+PATCH /api/profile
+
+Courses:
+
+GET /api/courses
+GET /api/courses/
+POST /api/courses
+PATCH /api/courses/
+POST /api/courses//publish
+POST /api/courses//enroll
+GET /api/my/courses
+
+Lessons:
+
+GET /api/courses//lessons
+POST /api/courses//lessons
+PATCH /api/lessons/
+POST /api/lessons//complete
+
+Assessments:
+
+GET /api/courses//quizzes
+POST /api/courses//quizzes
+GET /api/quizzes/
+POST /api/quizzes//attempts
+GET /api/my/assessments
+
+Certificates:
+
+GET /api/my/certificates
+GET /api/certificates//verify
+
+Notifications:
+
+GET /api/my/notifications
+PATCH /api/notifications//read
+
+Instructor:
+
+GET /api/instructor/overview
+GET /api/instructor/courses
+GET /api/instructor/courses//students
+GET /api/instructor/analytics
+
+Administrator:
+
+GET /api/admin/overview
+GET /api/admin/users
+PATCH /api/admin/users//status
+GET /api/admin/courses
+POST /api/admin/courses//approve
+POST /api/admin/courses//reject
+GET /api/admin/activity-logs
+GET /api/admin/reports
+
+Additional routes may be created when necessary.
+
+Use consistent response formats.
+
+Successful response example:
+
+{
+"success": true,
+"data": {},
+"message": "Operation completed successfully"
+}
+
+Error response example:
+
+{
+"success": false,
+"error": {
+"code": "VALIDATION_ERROR",
+"message": "Please check the submitted information"
+}
+}
+
+These are example contracts. Adapt the response implementation consistently throughout the application.
+
+Never return raw server stack traces or secret configuration values to the client.
+
+Implement actual route handlers and database operations.
+
+Do not leave API routes as empty functions or return fabricated success messages.
+
+Support appropriate course thumbnails and learning materials.
+
+Requirements:
+
+Validate file types.
+Validate file sizes.
+Restrict uploads to authorized users.
+Store files in the configured storage service.
+Associate uploaded files with the correct course or lesson.
+Handle failed uploads.
+Display upload progress when practical.
+Show a clear success or failure message.
+Prevent unauthorized access to private files.
+
+If storage is not configured, explain the required configuration and provide an appropriate development fallback.
+
+Never claim a file was uploaded when the operation failed.
+
+Create a premium, polished educational experience.
+
+Landing page:
+
+Warm white.
+Violet.
+Coral accents.
+High-quality course artwork.
+
+Student dashboard:
+
+Purple.
+Lavender.
+Warm neutrals.
+
+Instructor dashboard:
+
+Emerald.
+Charcoal.
+Cream.
+
+Administrator dashboard:
+
+Charcoal.
+Amber.
+Neutral grey.
+
+Maintain consistent typography, spacing, controls, and component behavior.
+
+Use:
+
+Responsive layouts.
+Sidebar navigation on desktop where appropriate.
+Mobile navigation.
+Course cards.
+Progress indicators.
+Tables.
+Charts.
+Forms.
+Modals.
+Confirmation dialogs.
+Toast notifications.
+Loading skeletons.
+Empty states.
+Error states.
+Success states.
+
+Provide accessible contrast and keyboard navigation.
+
+Avoid excessive animations.
+
+Every interactive control must have a meaningful action.
+
+Do not create buttons that only display an alert saying the feature is coming soon.
+
+Do not create fake forms that discard submitted data.
+
+Do not create charts with invented numbers when real records are available.
+
+Use clearly identified seed data only when appropriate for development or demonstrations.
+
+Use reusable components.
+
+Organize the code into appropriate modules, including:
+
+components
+pages
+layouts
+routes
+hooks
+services
+api
+types, if using TypeScript
+utilities
+styles
+
+Separate student, instructor, and administrator route groups.
+
+Use a centralized API client.
+
+Implement:
+
+Loading states.
+Error handling.
+Request validation.
+Authentication-aware requests.
+Appropriate session handling.
+Form validation.
+Empty states.
+Responsive behavior.
+
+Do not make every component responsible for its own unrelated API logic.
+
+Do not duplicate business logic across multiple pages.
+
+Use protected routes for user experience, while enforcing real authorization on the backend.
+
+Create a realistic development dataset containing:
+
+Several published courses.
+Multiple categories.
+Beginner, intermediate, and advanced courses.
+Multiple lessons per course.
+Sample quiz questions.
+Student enrollment records.
+Lesson-completion records.
+Assessment attempts.
+Course announcements.
+Certificate examples where eligibility requirements are met.
+
+Use deterministic sample data where possible.
+
+Clearly distinguish sample data from real user-generated records.
+
+Provide a repeatable database seed process.
+
+Do not insert sample records into production accounts without authorization.
+
+Create a documented method for preparing the demonstration environment.
+
+Test the complete application rather than merely checking whether pages render.
+
+Authentication tests:
+
+Valid registration.
+Invalid registration.
+Valid login.
+Invalid login.
+Logout.
+Session persistence.
+Protected route access.
+Suspended account behavior.
+
+Student tests:
+
+Browse published courses.
+Search and filter courses.
+Enroll in a course.
+Prevent duplicate enrollment.
+Open lessons.
+Mark a lesson complete.
+Persist lesson completion.
+Recalculate course progress.
+Submit a quiz.
+Verify server-calculated scores.
+View eligible certificates.
+Verify access restrictions.
+
+Instructor tests:
+
+Create a course.
+Edit an owned course.
+Save a draft.
+Publish a valid course.
+Reject invalid publication.
+Add lessons.
+Create a quiz.
+View authorized student performance.
+Verify that another instructor's private course cannot be edited.
+
+Administrator tests:
+
+Access the admin dashboard.
+View user records.
+Suspend and reactivate an account.
+Review courses.
+Approve or reject courses.
+Verify that unauthorized users cannot execute administrative operations.
+
+UI tests:
+
+Every navigation link works.
+Every button performs the intended action.
+Forms validate input.
+Loading states appear appropriately.
+Errors are visible and understandable.
+Empty states are useful.
+Desktop layouts work.
+Mobile layouts work.
+No broken images.
+No unexpected console errors.
+
+Integration tests:
+
+Frontend communicates with the real backend.
+Backend communicates with the configured database.
+Authentication is enforced.
+Authorization is enforced.
+Database writes persist.
+Error responses are handled correctly.
+
+Run available build, lint, and test commands.
+
+Fix errors before declaring the implementation complete.
+
+Do not claim tests passed unless you actually ran them.
+
+Prepare the repository for deployment.
+
+Provide:
+
+Clean project structure.
+README.md.
+.env.example.
+.gitignore.
+Database migrations.
+Seed instructions.
+API documentation.
+Setup instructions.
+Testing instructions.
+Deployment instructions.
+Known limitations.
+
+Ensure that:
+
+Secret keys are not committed.
+The frontend uses the correct backend URL.
+Production environment variables are documented.
+Database migrations can be applied.
+The production API is reachable.
+The deployed frontend handles errors gracefully.
+The project can be run from the documented instructions.
+
+GitHub workflow:
+
+Inspect the existing Git remote.
+Preserve the existing repository if appropriate.
+Make small, meaningful changes.
+Commit completed work when Git operations are available and authorized.
+Push changes through the configured integration when available.
+Report the actual synchronization result.
+If synchronization cannot be completed, explain the exact remaining step.
+
+Do not invent repository URLs or claim a push succeeded without verification.
+
+Implement the application in the following order.
+
+PHASE 1:
+
+Inspect the existing project.
+Prepare documentation.
+Establish the frontend and backend.
+Configure environment variables.
+Establish database connectivity.
+
+PHASE 2:
+
+Create database migrations.
+Implement authentication.
+Implement role authorization.
+Establish protected routes.
+
+PHASE 3:
+
+Build the public landing page.
+Build course discovery.
+Build course details.
+Implement enrollment.
+
+PHASE 4:
+
+Implement student learning.
+Implement lessons.
+Implement lesson completion.
+Implement progress tracking.
+
+PHASE 5:
+
+Build instructor course management.
+Implement lesson creation.
+Implement quiz creation.
+Implement student performance views.
+
+PHASE 6:
+
+Build administrator management.
+Implement user management.
+Implement course moderation.
+Implement activity logs.
+
+PHASE 7:
+
+Implement assessments.
+Implement certificates.
+Implement notifications.
+Add selected advanced features.
+
+PHASE 8:
+
+Polish the UI.
+Improve responsiveness.
+Implement loading, error, empty, and success states.
+Verify accessibility.
+
+PHASE 9:
+
+Run tests.
+Fix bugs.
+Verify security.
+Verify database persistence.
+Build the production frontend.
+Verify backend startup.
+
+PHASE 10:
+
+Prepare the README.
+Prepare demo accounts or a safe demo setup.
+Prepare a demonstration script.
+Deploy where configuration and permissions allow.
+Verify the deployed application.
+Report the actual result.
+
+Do not skip backend or database work merely to make the frontend look complete.
+
+These rules are mandatory.
+
+Do not build a static-only application.
+Do not use fake login functionality as production authentication.
+Do not make every role use the same dashboard.
+Do not grant privileges based on frontend role selection.
+Do not make buttons decorative.
+Do not store important records only in browser memory.
+Do not fabricate database success.
+Do not expose privileged keys.
+Do not trust scores or progress values submitted by the browser.
+Do not expose private course data to unauthorized users.
+Do not create broken routes.
+Do not leave core API endpoints unimplemented.
+Do not silently swallow API errors.
+Do not discard existing working code without a reason.
+Do not add advanced features before the core learning workflow works.
+Do not report untested features as fully verified.
+Do not claim deployment or GitHub synchronization succeeded unless verified.
+Do not leave required configuration undocumented.
+
+When a required external service is unavailable, clearly identify the missing configuration and implement the appropriate integration boundary.
+
+The application is ready for demonstration only when the following core workflows have been verified.
+
+STUDENT:
+A student can register, log in, explore courses, enroll, open lessons, complete lessons, see updated progress, submit an assessment, and access a certificate after meeting the completion requirements.
+
+INSTRUCTOR:
+An authorized instructor can log in, create a course, add lessons, create a quiz, publish the course, and review authorized student performance.
+
+ADMINISTRATOR:
+An authorized administrator can log in, view platform metrics, manage users, review courses, and perform permitted moderation actions.
+
+SECURITY:
+Users cannot gain unauthorized roles or access other users' private data.
+
+PERSISTENCE:
+Important records survive page refreshes, logout, and subsequent login.
+
+RELIABILITY:
+The main user workflows work from beginning to end without unexpected errors.
+
+DESIGN:
+The landing page and three dashboards are responsive, consistent, accessible, and visually polished.
+
+DOCUMENTATION:
+The repository contains understandable setup, testing, configuration, and deployment instructions.
+
+After implementation, provide a clear report containing:
+
+Features implemented.
+Features not yet implemented.
+Frontend architecture.
+Backend architecture.
+Database schema.
+Authentication design.
+Role authorization design.
+API endpoints implemented.
+Tests executed and their actual results.
+Build results.
+Required environment variables.
+Remaining configuration steps.
+Deployment status.
+GitHub synchronization status.
+Known limitations.
+Manual testing instructions.
+
+Explain the important technical decisions in beginner-friendly language.
+
+Start by inspecting the current project, then implement the application systematically.
+
+Prioritize a complete, reliable student learning workflow, followed by instructor functionality and administrator management.
+
+The final result must be a working online learning platform that can be demonstrated confidently, not merely a visually attractive mockup.
